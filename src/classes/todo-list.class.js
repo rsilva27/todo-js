@@ -41,9 +41,9 @@ export class TodoList {
         if(localStorage.getItem('todo')){
             this.todos = JSON.parse(localStorage.getItem('todo'));
         } else {
-            this.todo = [];
+            this.todos = [];
         }
-
-        //this.todos = this.todos.map(obj => Todo.fromJson(obj));
+        
+        this.todos = this.todos.map(obj => Todo.fromJson(obj));
     }
 }
