@@ -44,6 +44,6 @@ export class TodoList {
             this.todo = [];
         }
 
-        this.todos = this.todos.map(obj => Todo.fromJson(obj));
+        //this.todos = this.todos.map(obj => Todo.fromJson(obj));
     }
 }
